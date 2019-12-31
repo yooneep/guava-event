@@ -22,12 +22,10 @@ import java.util.concurrent.TimeUnit;
  * @author qiaozhi@58.com
  * @since JDK 1.8
  */
-public class ThreadTest {
+public class DirectThreadTest {
     public static void main(String[] args) {
-//		Executor executor = DirectExecutor.directExecutor();
-        Executor executor = new ThreadPoolExecutor(10, 10,
-                0L, TimeUnit.MILLISECONDS,
-                new LinkedBlockingQueue<>());
+		Executor executor = getDirect();
+//        Executor executor = getMore();
 
         for (int i = 0; i < 10; i++) {
             executor.execute(() -> {
@@ -40,6 +38,15 @@ public class ThreadTest {
                 }
             });
         }
+    }
 
+    private static Executor getDirect() {
+        return DirectExecutor.directExecutor();
+    }
+
+    private static Executor getMore() {
+        return new ThreadPoolExecutor(10, 10,
+                0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<>());
     }
 }
