@@ -7,7 +7,7 @@
  * Author: qiaozhi@58.com All Rights Reserved. 
  * 
  */
-package com.example.demo.event.start10;
+package com.example.demo.event.start11;
 
 import com.google.common.eventbus.Subscribe;
 import org.slf4j.Logger;

@@ -7,11 +7,17 @@
  * Author: qiaozhi@58.com All Rights Reserved. 
  * 
  */
-package com.example.demo.event.start10;
+package com.example.demo.event.start11;
 
+import com.google.common.eventbus.AsyncEventBus;
 import com.google.common.eventbus.EventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 
@@ -33,7 +39,10 @@ public class EventBusStart {
 	 */
 	public static void main(String[] args) {
 		// Dispatcher.perThreadDispatchQueue
-		EventBus eventBus = new EventBus();
+		ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10, 10,
+				0L, TimeUnit.MILLISECONDS,
+				new LinkedBlockingQueue<Runnable>());
+		final AsyncEventBus eventBus = new AsyncEventBus("庞宁",threadPoolExecutor);
 		eventBus.register(new EventBusListener());
 		LOGGER.info("EventBusStart start");
 		eventBus.post("Simple Event");
@@ -42,11 +51,11 @@ public class EventBusStart {
 	/**
 	 * doAction  :Received event [Simple Event]
 	 * doAction3  :Received event [Simple Event]
-	 * doAction1 :Received event [Simple Event]
 	 * doAction2  :Received event [Simple Event]
+	 * doAction2  :Received event [Simple Event2
+	 * doAction3  :Received event [Simple Event2
 	 * doAction  :Received event [Simple Event2]
-	 * doAction3  :Received event [Simple Event2]
+	 * doAction1 :Received event [Simple Event]
 	 * doAction1 :Received event [Simple Event2]
-	 * doAction2  :Received event [Simple Event2]
 	 */
 }
