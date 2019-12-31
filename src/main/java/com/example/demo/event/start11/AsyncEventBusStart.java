@@ -10,11 +10,9 @@
 package com.example.demo.event.start11;
 
 import com.google.common.eventbus.AsyncEventBus;
-import com.google.common.eventbus.EventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -31,8 +29,8 @@ import java.util.concurrent.TimeUnit;
  * @since JDK 1.8
  *
  */
-public class EventBusStart {
-	private static final Logger LOGGER = LoggerFactory.getLogger(EventBusStart.class);
+public class AsyncEventBusStart {
+	private static final Logger LOGGER = LoggerFactory.getLogger(AsyncEventBusStart.class);
 
 	/**
 	 * @param args
