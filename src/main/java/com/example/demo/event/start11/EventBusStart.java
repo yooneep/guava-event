@@ -52,8 +52,8 @@ public class EventBusStart {
 	 * doAction  :Received event [Simple Event]
 	 * doAction3  :Received event [Simple Event]
 	 * doAction2  :Received event [Simple Event]
-	 * doAction2  :Received event [Simple Event2
-	 * doAction3  :Received event [Simple Event2
+	 * doAction2  :Received event [Simple Event2]
+	 * doAction3  :Received event [Simple Event2]
 	 * doAction  :Received event [Simple Event2]
 	 * doAction1 :Received event [Simple Event]
 	 * doAction1 :Received event [Simple Event2]
