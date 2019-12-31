@@ -38,7 +38,7 @@ public class DemoEventBus {
 		
 		
 		OrderServiceListener orderService = new OrderServiceListener(eventBus);
-		orderService.query("werwersdf");
+		orderService.query("123456789");
 
 	}
 

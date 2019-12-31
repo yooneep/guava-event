@@ -1,4 +1,4 @@
-package com.example.demo.event.start9;
+package com.example.demo.event.start9.dto;
 
 /**
  * 

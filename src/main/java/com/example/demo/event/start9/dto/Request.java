@@ -7,7 +7,7 @@
  * Author: qiaozhi@58.com All Rights Reserved. <br/> 
  * 
  */  
-package com.example.demo.event.start9;
+package com.example.demo.event.start9.dto;
 
 /** 
  * Project Name:guava-event <br/> 
