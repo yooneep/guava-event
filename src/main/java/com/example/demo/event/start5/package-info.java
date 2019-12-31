@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ * 集成的事件会生效吗？
  */
 package com.example.demo.event.start5;

@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ *  入门示例
  */
 package com.example.demo.event.start;

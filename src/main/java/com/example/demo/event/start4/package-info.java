@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ * 父类的订阅注解会生效吗？
  */
 package com.example.demo.event.start4;

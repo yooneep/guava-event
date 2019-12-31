@@ -9,6 +9,7 @@
  */
 package com.example.demo.event.start7;
 
+import com.google.common.eventbus.DeadEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,6 +36,7 @@ public class DeadEventBus {
 		EventBus eventBus = new EventBus("pangning's  event");
 		eventBus.register(new DeadEventListener());
 		eventBus.post("这是请求内容");
+//		eventBus.post(new DeadEvent("source","event"));
 		LOGGER.info("===============end");
 	}
 }

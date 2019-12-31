@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ * 关于DeadEvent
  */
 package com.example.demo.event.start7;

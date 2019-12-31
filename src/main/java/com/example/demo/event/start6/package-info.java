@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ * 异常的信息该怎么处理
  */
 package com.example.demo.event.start6;

@@ -15,6 +15,6 @@
  * @author qiaozhi@58.com 
  * @version  
  * @since JDK 1.8 
- * 
+ *  多个订阅者和类型匹配
  */
 package com.example.demo.event.start2;
