@@ -8,6 +8,9 @@
  */
 package com.example.demo.event.think;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -23,22 +26,32 @@ import java.util.concurrent.TimeUnit;
  * @since JDK 1.8
  */
 public class MoreThreadTest {
+    private static final Logger LOGGER = LoggerFactory.getLogger(DirectThreadTest.class);
+
+    private static final int LOOP = 10;
+
     public static void main(String[] args) {
         Executor executor = getMore();
 
-        for (int i = 0; i < 10; i++) {
+        int i = 0;
+        while (i < LOOP) {
             executor.execute(() -> {
-                System.out.println("11111111111111");
+                LOGGER.info("11111111111111");
                 try {
                     TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    LOGGER.error("error", e);
                 }
             });
+            i++;
         }
     }
 
+    /**
+     * multi -> concurrent
+     *
+     * @return
+     */
     private static Executor getMore() {
         return new ThreadPoolExecutor(10, 10,
                 0L, TimeUnit.MILLISECONDS,
