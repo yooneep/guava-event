@@ -12,7 +12,6 @@ import java.util.Observer;
  **/
 public class SendEmailService implements Observer {
 
-
     public SendEmailService(Observable o) {
         o.addObserver(this);
     }
