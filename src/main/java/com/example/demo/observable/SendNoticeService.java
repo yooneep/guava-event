@@ -1,5 +1,8 @@
 package com.example.demo.observable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Observable;
 import java.util.Observer;
 
@@ -11,9 +14,10 @@ import java.util.Observer;
  * @Version: 1.0
  **/
 public class SendNoticeService implements Observer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SendNoticeService.class);
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println("SendNoticeService send： " + arg.toString());
+        LOGGER.info("SendNoticeService send： " + arg.toString());
     }
 }

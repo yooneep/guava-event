@@ -10,13 +10,14 @@ import org.slf4j.LoggerFactory;
  * @Date: 2020/1/2 11:29
  * @Version: 1.0
  **/
-public class Test {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Test.class);
-    private static final String SUCCESS_MESSAGE = "李二狗拼多多拼单成功！";
+public class Topic {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Topic.class);
 
-    public static void main(String[] args) {
+    private MyObservable observable;
+
+    public Topic() {
         // 1.create
-        MyObservable observable = new MyObservable();
+        observable = new MyObservable();
 
         // 2.register
         observable.addObserver(new SendNoticeService());
@@ -26,12 +27,15 @@ public class Test {
 
         boolean b = observable.hasChanged();
         LOGGER.info("================" + b);
+    }
 
+
+    public void notify(String orderMessage){
         // 3.ready state
         observable.setChanged();
 
         // 4.notify
         // 从订单拼凑下单成功信息
-        observable.notifyObservers(SUCCESS_MESSAGE);
+        observable.notifyObservers(orderMessage);
     }
 }
