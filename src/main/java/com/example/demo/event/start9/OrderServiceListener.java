@@ -35,13 +35,32 @@ public class OrderServiceListener {
         this.eventBus.register(this);
     }
 
+    /**
+     * query
+     * @param orderNo
+     */
     public void query(String orderNo) {
         LOGGER.info("Received the orderNo [{}]", orderNo);
         this.eventBus.post(new Request(orderNo));
     }
 
+    /**
+     *
+     * @param response
+     */
     @Subscribe
     public void handleResponse(Response response) {
         LOGGER.info("接收到保司返回结果为： {}", JSON.toJSONString(response, true));
+        LOGGER.info("写入数据库完毕");
+    }
+
+    @Subscribe
+    public void handleDbInsert(Response response) {
+        LOGGER.info("写入数据库完毕： {}", JSON.toJSONString(response, true));
+    }
+
+    @Subscribe
+    public void handleEmail(Response response) {
+        LOGGER.info("发送邮件完毕： {}", JSON.toJSONString(response, true));
     }
 }

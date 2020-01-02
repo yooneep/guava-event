@@ -22,9 +22,7 @@ import org.slf4j.LoggerFactory;
  * Date:2019年12月30日上午8:53:10 <br/>
  *
  * @author qiaozhi@58.com
- * @version
  * @since JDK 1.8
- *
  */
 public class RpcQueryListener {
     private final static Logger LOGGER = LoggerFactory.getLogger(RpcQueryListener.class);
@@ -37,14 +35,18 @@ public class RpcQueryListener {
 
     /**
      * mock 查询保司
+     *
      * @param request
      */
     @Subscribe
     public void doQuery(Request request) {
         LOGGER.info("QueryListener doQuery orderNo [{}]", request.toString());
-        Response response = new Response();
-        response.setCode("0000");
-        response.setMsg("成功");
-        eventBus.post(response);
+        boolean result = true;
+        if (result) {
+            Response response = new Response();
+            response.setCode("0000");
+            response.setMsg("成功");
+            eventBus.post(response);
+        }
     }
 }
