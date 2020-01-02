@@ -1,5 +1,9 @@
-package com.example.demo.observable;
+package com.example.demo.observable.context;
 
+import com.example.demo.observable.MyObservable;
+import com.example.demo.observable.service.SendEmailService;
+import com.example.demo.observable.service.SendMessageService;
+import com.example.demo.observable.service.SendNoticeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

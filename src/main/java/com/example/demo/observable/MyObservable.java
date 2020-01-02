@@ -12,7 +12,7 @@ import java.util.Observable;
 public class MyObservable extends Observable {
 
     @Override
-    protected synchronized void setChanged() {
+    public synchronized void setChanged() {
         super.setChanged();
     }
 }
