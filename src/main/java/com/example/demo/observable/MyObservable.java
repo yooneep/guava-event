@@ -5,7 +5,7 @@ import java.util.Observable;
 /**
  * @ClassName: MyObservable
  * @Description: MyObservable
- * @Author: pangning@58.com
+ * @Author: qiaozhi@58.com
  * @Date: 2020/1/2 14:33
  * @Version: 1.0
  **/

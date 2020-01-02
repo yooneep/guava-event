@@ -33,7 +33,7 @@ public class DeadEventBus {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		EventBus eventBus = new EventBus("pangning's  event");
+		EventBus eventBus = new EventBus("qiaozhi's  event");
 		eventBus.register(new DeadEventListener());
 //		eventBus.post(99);
 		eventBus.post("这是请求内容");

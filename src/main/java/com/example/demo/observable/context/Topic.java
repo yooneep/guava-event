@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 /**
  * @ClassName: Test
  * @Description: Test
- * @Author: pangning@58.com
+ * @Author: qiaozhi@58.com
  * @Date: 2020/1/2 11:29
  * @Version: 1.0
  **/

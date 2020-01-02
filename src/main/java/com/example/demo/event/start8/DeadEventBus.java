@@ -33,7 +33,7 @@ public class DeadEventBus {
 	 */
 	public static void main(String[] args) {
 		DeadEventListener deadEventListener = new DeadEventListener();
-		EventBus eventBus = new EventBus("pangning's  event");
+		EventBus eventBus = new EventBus("qiaozhi's  event");
 		eventBus.register(deadEventListener);
 		eventBus.post("这是请求内容");
 		eventBus.post("这是请求内容");
