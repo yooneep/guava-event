@@ -9,7 +9,7 @@ import java.util.Observer;
 /**
  * @ClassName: H5Client
  * @Description: 发短信提醒
- * @Author: qiaozhi@58.com
+ * @Author: mic_saber@163.com
  * @Date: 2020/1/2 11:28
  * @Version: 1.0
  **/

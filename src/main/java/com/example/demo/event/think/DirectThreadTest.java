@@ -4,7 +4,7 @@
  * Package Name:com.example.demo.event.think <br/>
  * Date:2019年12月30日下午10:29:22 <br/>
  * Copyright (c) 2019<br/>
- * Author: qiaozhi@58.com All Rights Reserved. <br/>
+ * Author: mic_saber@163.com All Rights Reserved. <br/>
  */
 package com.example.demo.event.think;
 
@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  * Package Name:com.example.demo.event.think <br/>
  * Date:2019年12月30日下午10:29:22 <br/>
  *
- * @author qiaozhi@58.com
+ * @author mic_saber@163.com
  * @since JDK 1.8
  */
 public class DirectThreadTest {

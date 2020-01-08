@@ -4,7 +4,7 @@
  * Package Name:com.example.demo.event.start6 <br/> 
  * Date:2019年12月29日下午11:31:36 <br/> 
  * Copyright (c) 2019<br/> 
- * Author: qiaozhi@58.com All Rights Reserved. <br/> 
+ * Author: mic_saber@163.com All Rights Reserved. <br/>
  * 
  */
 /** 
@@ -12,7 +12,7 @@
  * File Name:package-info.java <br/> 
  * Package Name:com.example.demo.event.start6 <br/> 
  * Date:2019年12月29日下午11:31:36 <br/> 
- * @author qiaozhi@58.com 
+ * @author mic_saber@163.com
  * @version  
  * @since JDK 1.8 
  * 异常的信息该怎么处理

@@ -4,7 +4,7 @@
  * Package Name:com.example.demo.event.start 
  * Date:2019年12月29日下午12:58:02 
  * Copyright (c) 2019
- * Author: qiaozhi@58.com All Rights Reserved. 
+ * Author: mic_saber@163.com All Rights Reserved.
  * 
  */
 package com.example.demo.event.start;
@@ -19,7 +19,7 @@ import com.google.common.eventbus.Subscribe;
  * Package Name:com.example.demo.event.start <br/>
  * Date:2019年12月29日下午1:01:45 <br/>
  * 
- * @author qiaozhi@58.com
+ * @author mic_saber@163.com
  * @version
  * @since JDK 1.8
  *

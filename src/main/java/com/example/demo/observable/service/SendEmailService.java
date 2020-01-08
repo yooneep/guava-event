@@ -9,7 +9,7 @@ import java.util.Observer;
 /**
  * @ClassName: SendEmailService
  * @Description: 发送邮件
- * @Author: qiaozhi@58.com
+ * @Author: mic_saber@163.com
  * @Date: 2020/1/2 14:11
  * @Version: 1.0
  **/

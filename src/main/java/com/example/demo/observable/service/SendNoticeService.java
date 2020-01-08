@@ -9,7 +9,7 @@ import java.util.Observer;
 /**
  * @ClassName: SendNoticeService
  * @Description: 手机消息提醒
- * @Author: qiaozhi@58.com
+ * @Author: mic_saber@163.com
  * @Date: 2020/1/2 14:38
  * @Version: 1.0
  **/
