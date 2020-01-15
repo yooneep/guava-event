@@ -37,6 +37,6 @@ public class EventBusStart {
 		eventBus.register(new EventBusListener());
 		LOGGER.info("EventBusStart start");
 		eventBus.post("Simple Event");
+		eventBus.post("Simple Event2");
 	}
-
 }

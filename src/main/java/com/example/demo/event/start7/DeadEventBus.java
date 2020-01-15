@@ -35,8 +35,8 @@ public class DeadEventBus {
 	public static void main(String[] args) {
 		EventBus eventBus = new EventBus("qiaozhi's  event");
 		eventBus.register(new DeadEventListener());
-//		eventBus.post(99);
-		eventBus.post("这是请求内容");
+		eventBus.post(99);
+//		eventBus.post("这是请求内容");
 //		eventBus.post(new DeadEvent("source","event"));
 		LOGGER.info("===============end");
 	}

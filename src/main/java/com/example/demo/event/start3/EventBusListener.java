@@ -33,7 +33,7 @@ public class EventBusListener {
 	@Subscribe
 	public void doAction(String event) {
 		try {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(3);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -48,6 +48,11 @@ public class EventBusListener {
 	@Subscribe
 	public void doAction2(String event) {
 		LOGGER.info("doAction2:Received event [{}]", event);
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Subscribe

@@ -9,10 +9,9 @@
  */  
 package com.example.demo.event.start4;
 
+import com.google.common.eventbus.Subscribe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.google.common.eventbus.Subscribe;
 
 /** 
  * Project Name:guava-event <br/> 
@@ -29,5 +28,11 @@ public class ChildListener extends AbstractListener {
 	@Subscribe
 	public void childAction(String event) {
 		LOGGER.info("childAction:Received event [{}]", event);
+	}
+
+	@Override
+	@Subscribe
+	public void baseAction(String event) {
+		LOGGER.info("child baseAction:Received event [{}]", event);
 	}
 }

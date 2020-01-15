@@ -33,7 +33,7 @@ public class DeadEventListener {
         LOGGER.info("============getDeadEvent======= {}", JSON.toJSONString(event));
     }
 
-//	@Subscribe
+	@Subscribe
 	public void getString(Integer event) {
 		LOGGER.info("============getString======= {}", event);
 	}
