@@ -4,7 +4,7 @@
  * Package Name:com.example.demo.event.think <br/>
  * Date:2019年12月30日下午10:30:59 <br/>
  * Copyright (c) 2019<br/>
- * Author: qiaozhi@58.com All Rights Reserved. <br/>
+ * Author: mic_saber@163.com All Rights Reserved. <br/>
  */
 package com.example.demo.event.think;
 
@@ -16,7 +16,7 @@ import java.util.concurrent.Executor;
  * File Name:DirectExecutor.java <br/> 
  * Package Name:com.example.demo.event.think <br/> 
  * Date:2019年12月30日下午10:30:59 <br/> 
- * @author qiaozhi@58.com 
+ * @author mic_saber@163.com
  * @version
  * @since JDK 1.8 
  *

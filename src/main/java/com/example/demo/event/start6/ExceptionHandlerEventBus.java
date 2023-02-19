@@ -4,7 +4,7 @@
  * Package Name:com.example.demo.event.start6 <br/> 
  * Date:2019年12月29日下午11:59:55 <br/> 
  * Copyright (c) 2019<br/> 
- * Author: qiaozhi@58.com All Rights Reserved. <br/> 
+ * Author: mic_saber@163.com All Rights Reserved. <br/>
  * 
  */
 package com.example.demo.event.start6;
@@ -23,7 +23,7 @@ import com.google.common.eventbus.SubscriberExceptionHandler;
  * Package Name:com.example.demo.event.start6 <br/>
  * Date:2019年12月29日下午11:59:55 <br/>
  * 
- * @author qiaozhi@58.com
+ * @author mic_saber@163.com
  * @version
  * @since JDK 1.8
  * 
